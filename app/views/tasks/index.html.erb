@@ -1,0 +1,7 @@
+<ul>
+	<% @tasks.each do |task| %>
+	  <li> <%= task.priority %> <%= task.name %> </li>
+	<% end %>
+</ul>
+
+<%= link_to 'New Task', new_task_path %>
